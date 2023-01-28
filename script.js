@@ -6,9 +6,6 @@ onst alphanumericOnly = str.toLowerCase().match(/[a-z0-9]/g);
     
 // 3) return string === reversedString
 return alphanumericOnly.join('') === alphanumericOnly.reverse().join('');
-    
 }
 console.log(palindrome("racecar"));
-
-}
 module.exports = palindrome
