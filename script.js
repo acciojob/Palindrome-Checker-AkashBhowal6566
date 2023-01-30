@@ -1,7 +1,6 @@
 // complete the given function
-
 function palindrome(str){
-	ar removeChar = str.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+ var removeChar = str.replace(/[^A-Z0-9]/ig, "").toLowerCase();
 
   /* reverse removeChar for comparison*/
   var checkPalindrome = removeChar.split('').reverse().join('');
@@ -13,4 +12,6 @@ function palindrome(str){
      return false;
    }
 }
-module.exports = palindrome
+
+
+module.exports = palindrome
