@@ -1,11 +1,16 @@
 // complete the given function
 
 function palindrome(str){
-onst alphanumericOnly = str.toLowerCase().match(/[a-z0-9]/g);
-    // 2) Strip out non-alphanumeric characters
-    
-// 3) return string === reversedString
-return alphanumericOnly.join('') === alphanumericOnly.reverse().join('');
+	ar removeChar = str.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+
+  /* reverse removeChar for comparison*/
+  var checkPalindrome = removeChar.split('').reverse().join('');
+
+  /* Check to see if str is a Palindrome*/
+   if(removeChar === checkPalindrome){
+     return true;
+   }else{
+     return false;
+   }
 }
-console.log(palindrome("racecar"));
 module.exports = palindrome
